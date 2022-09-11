@@ -830,8 +830,8 @@ body {
   left: 0;
   background: rgba(33, 150, 243, 0.9);
   color: var(--white-color);
-  line-height: 1.2;
-  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -877,7 +877,7 @@ body {
 
 .modal {
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -886,6 +886,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -905,6 +906,11 @@ body {
   padding: 0;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--accent);
+}
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -920,7 +926,6 @@ body {
 
 .modal-text {
   margin-bottom: 12px;
-  margin-top: 40px;
 
   font-weight: 700;
   font-size: 20px;
@@ -1047,7 +1052,7 @@ body {
 
 .send-btn:hover,
 .send-btn:focus {
-  background-color: var(--accent);
+  background-color: var(--button-color);
 }
 
 .form-box {
@@ -1057,6 +1062,7 @@ body {
 .sign-up-form {
   display: flex;
   align-items: flex-end;
+  margin-top: 20px;
 }
 .sign-up-title {
   display: block;
@@ -1074,7 +1080,6 @@ body {
   transition: border 250ms var(--cubic-style);
 
   padding: 15px 16px;
-  margin-top: 20px;
   height: 50px;
   width: 358px;
 
